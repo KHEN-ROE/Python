@@ -261,3 +261,4 @@ numG = int(input("포도 알의 개수 입력"))
 numS = int(input("딸기 알의 개수 입력"))
 wSum = numG*wG + numS*wS
 print(f"포도 알 {numG}개와 딸기 알 {numS}개를 합한 총 중량은 {int(wSum)}g 입니다")
+
