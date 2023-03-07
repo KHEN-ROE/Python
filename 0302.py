@@ -334,6 +334,7 @@ while True:
 작은 수가 0이 될 때까지 이 과정을 반목하라. 마지막 큰 수가 최대 공약수이다.
 """
 
+"""
 num1 = int(input("input num1 : "))
 num2 = int(input("input num2 : "))
 grd=0;
@@ -345,7 +346,7 @@ while True:
         break
 grd = num2
 print(f"최대공약수는 {grd}")
-
+"""
 
 
 
