@@ -380,7 +380,7 @@ l = [1,2,3]
 m = [4,5,6]
 result = []
 for i in range(len(l)):
-    result.append(l[i] + m[i])
+    result.append(l[i] + m[i]) #반복문 이용해서 원소를 하나씩 더한 것임 
 print(result)
 ## 컴프리핸션 이용해서 풀면?
 """
@@ -389,10 +389,12 @@ print(result)
 사용자로부터 5개의 숫자를 문자열로 입력 받아 각 숫자를 +로 연결한 문자열을 생성하라.
 예를 들어 2, 5, 11, 33, 55를 입력하면 '2+5+11+33+55'를 생성하라.
 """
-#혼자 해볼 것 hint : split, join
-num_list=[]
-num_list= input("숫자 입력")
-
+"""
+#혼자 해볼 것. 2가지 버전으로
+num = input("input 5 numbers").split()
+num2 = '+'.join(num)
+print(num2)
+"""
 
 """
 #튜플과 리스트 간 형변환 시 주의점
