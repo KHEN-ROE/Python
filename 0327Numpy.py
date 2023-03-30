@@ -20,6 +20,15 @@ arr4d = np.array([[[[1, 2], [3, 4]], [[5, 6], [7, 8]]], [[[9, 10], [11, 12]], [[
 print(arr4d)
 
 #브로드캐스팅
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([1])
+arr3 = np.array([[1],[2],[3]])
+
+
+# 브로드캐스팅을 통해 크기가 다른 배열 간 연산이 가능
+print(arr1 + arr2)
+print(arr1 + arr3)
+
 
 #유니버셜 함수
 arr = np.array([0, 1, 2, 3, 4])
