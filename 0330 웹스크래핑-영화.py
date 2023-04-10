@@ -30,7 +30,7 @@ import pandas as pd
 
 df = pd.DataFrame(movie, columns = ['순위', '영화명', '관람가','평점','예매율','개봉일'] )
 
-df.to_csv('movie_info.csv', index=False, encoding='cp949')
+df.to_csv('movie_info.csv', index=False, encoding='cp949') #데이터프레임 객체를 csv 파일로 변환.
 
 df = pd.read_csv('movie_info.csv', encoding='cp949') # read_csv로 읽어오면 숫자로 된 문자는 알아서 숫자로 변환해줌
 
@@ -46,7 +46,7 @@ matplotlib.rcParams['font.family'] = 'Malgun Gothic'
 df['개봉일'] = pd.to_datetime(df['개봉일'], format = '%y.%m.%d')
 #print(df.info())
 
-df_weekly = df.resample('W', on = '개봉일').mean(numeric_only = True) # 숫자가 아니면 warning 떠서 numeric_only 넣어줌 
+df_weekly = df.resample('W', on = '개봉일').mean() # 숫자가 아니면 warning 떠서 numeric_only 넣어줌
 #결측치 제거(0으로 채워줌)
 df_weekly = df_weekly.fillna(0)
 print(df_weekly)
